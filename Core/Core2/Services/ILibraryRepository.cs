@@ -7,16 +7,16 @@ namespace Core2.Services
     public interface ILibraryRepository
     {
         IEnumerable<Author> GetAuthors();
-        Author GetAuthor(Guid id);
+        Author GetAuthor(Guid authorId);
         void AddAuthor(Author author);
-        void DeleteAuthor(Guid id);
-        void UpdateAuthor(Guid id, Author author);
-        bool AuthorExists(Guid id);
-        IEnumerable<Book> Books();
+        void DeleteAuthor(Author author);
+        void UpdateAuthor(Author author);
+        bool AuthorExists(Guid authorId);
+        IEnumerable<Book> GetBooksForAuthor(Guid authorId);
         Book GetBookForAuthor(Guid authorId, Guid bookId);
         void AddBookForAuthor(Guid authorId, Book book);
-        void UpdateBookForAuthor(Guid bookId, Book book);
-        void DeleteBookForAuthor(Guid bookId);
+        void UpdateBookForAuthor(Book book);
+        void DeleteBookForAuthor(Book book);
         bool Save();
     }
 }

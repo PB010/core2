@@ -1,4 +1,5 @@
 ﻿using Core2.Entities;
+using Core2.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -24,6 +25,7 @@ namespace Core2
             var connectionString = Configuration["connectionStrings:cityInfoDbConnectionString"];
 
             services.AddDbContext<LibraryContext>(o => o.UseSqlServer(connectionString));
+            services.AddScoped<ILibraryRepository, LibraryRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
