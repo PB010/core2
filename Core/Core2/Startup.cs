@@ -1,7 +1,10 @@
-﻿using Core2.Entities;
+﻿using AutoMapper;
+using Core2.Entities;
+using Core2.Models;
 using Core2.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -37,8 +40,25 @@ namespace Core2
             }
             else
             {
-                app.UseExceptionHandler();
+                app.UseExceptionHandler(appBuilder =>
+                {
+                    appBuilder.Run(async context =>
+                    {
+                        context.Response.StatusCode = 500;
+                        await context.Response.WriteAsync("An unexpected error, try again later");
+                    });
+                });
             }
+
+            Mapper.Initialize(cfg =>
+            {
+                cfg.CreateMap<Author, GetAuthorsWithoutBooksDto>()
+                    .ForMember(dest => dest.Name, opt => opt.MapFrom(src =>
+                        $"{src.FirstName} {src.LastName}"))
+                    .ForMember(dest => dest.Age, opt => opt.MapFrom(src =>
+                        src.GetAge()));
+                cfg.CreateMap<Book, BookDto>();
+            });
 
             app.UseMvc();
         }

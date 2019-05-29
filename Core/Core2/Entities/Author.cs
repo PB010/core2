@@ -21,5 +21,18 @@ namespace Core2.Entities
 
         public ICollection<Book> Books { get; set; }
          = new List<Book>();
+
+        public int GetAge()
+        {
+            var currentDate = DateTime.UtcNow;
+            var age = currentDate.Year - DateOfBirth.Year;
+
+            if (currentDate < DateOfBirth.AddYears(age))
+            {
+                age--;
+            }
+
+            return age;
+        }
     }
 }
