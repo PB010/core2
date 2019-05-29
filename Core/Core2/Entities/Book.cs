@@ -9,7 +9,7 @@ namespace Core2.Entities
         [Required]
         [MaxLength(100)]
         public string Title { get; set; }
-        [MaxLength(200)]
+        [MaxLength(400)]
         public string Description { get; set; }
         public Author Author { get; set; }
         public Guid AuthorId { get; set; }
