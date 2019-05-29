@@ -21,17 +21,34 @@ namespace Core2.Controllers
         [HttpGet]
         public IActionResult GetAuthors()
         {
-            return Ok(_libraryRepository.GetAuthors().Select(Mapper.Map<Author, GetAuthorsWithoutBooksDto>));
+            return Ok(_libraryRepository.GetAuthors().Select(Mapper.Map<Author, AuthorDto>));
         }
 
-        [HttpGet("{authorId}")]
+        [HttpGet("{authorId}", Name = "GetNewAuthor")]
         public IActionResult GetAuthor(Guid authorId)
         {
             var author = _libraryRepository.GetAuthor(authorId);
             if (author == null)
                 return NotFound();
 
-            return Ok(Mapper.Map<GetAuthorsWithoutBooksDto>(author));
+            return Ok(Mapper.Map<AuthorDto>(author));
+        }
+
+        [HttpPost]
+        public IActionResult CreateAuthor([FromBody] AuthorForCreationDto authorForCreation)
+        {
+            if (authorForCreation == null)
+                return BadRequest();
+
+            var authorInDb = Mapper.Map<Author>(authorForCreation);
+            _libraryRepository.AddAuthor(authorInDb);
+
+            if (!_libraryRepository.Save())
+                throw new Exception("Something went wrong.");
+
+            return CreatedAtRoute("GetNewAuthor",
+                new {authorId = authorInDb.Id},
+                Mapper.Map<AuthorDto>(authorInDb));
         }
     }
 }

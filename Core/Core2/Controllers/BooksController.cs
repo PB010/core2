@@ -27,7 +27,7 @@ namespace Core2.Controllers
             return Ok(_libraryRepository.GetBooksForAuthor(authorId).Select(Mapper.Map<Book, BookDto>));
         }
 
-        [HttpGet("{bookId}")]
+        [HttpGet("{bookId}", Name = "GetBookForAuthor")]
         public IActionResult GetBookForAuthor(Guid authorId, Guid bookId)
         {
             if (!_libraryRepository.AuthorExists(authorId))
@@ -39,6 +39,26 @@ namespace Core2.Controllers
                 return NotFound();
 
             return Ok(Mapper.Map<BookDto>(bookFromDb));
+        }
+
+        [HttpPost]
+        public IActionResult CreateBookForAuthor(Guid authorId, [FromBody] BookForCreationDto book)
+        {
+            if (!_libraryRepository.AuthorExists(authorId))
+                return NotFound();
+
+            if (book == null)
+                return BadRequest();
+
+            var bookInDb = Mapper.Map<Book>(book);
+            _libraryRepository.AddBookForAuthor(authorId, bookInDb);
+
+            if(!_libraryRepository.Save())
+                throw new Exception("Something bad happened.");
+
+            return CreatedAtRoute("GetBookForAuthor",
+                new {bookId = bookInDb.Id},
+                Mapper.Map<BookDto>(bookInDb));
         }
     }
 }
