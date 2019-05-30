@@ -3,13 +3,14 @@ using Core2.Entities;
 using Core2.Models;
 using Core2.Services;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.Formatters;
-using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 
 namespace Core2
 {
@@ -27,9 +28,9 @@ namespace Core2
         {
             services.AddMvc(setupAction =>
             {
-                setupAction.ModelBinderProviders.Insert(0, new ArrayModelBinderProvider());
                 setupAction.ReturnHttpNotAcceptable = true;
                 setupAction.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
+                setupAction.InputFormatters.Add(new XmlDataContractSerializerInputFormatter());
             });
         
 
@@ -40,8 +41,12 @@ namespace Core2
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env,
+            ILoggerFactory loggerFactory)
         {
+            loggerFactory.AddConsole();
+            loggerFactory.AddDebug(LogLevel.Information);
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -52,6 +57,14 @@ namespace Core2
                 {
                     appBuilder.Run(async context =>
                     {
+                        var exceptionHandlerFeature = context.Features.Get<IExceptionHandlerFeature>();
+                        if (exceptionHandlerFeature != null)
+                        {
+                            var logger = loggerFactory.CreateLogger("Global exception logger");
+                            logger.LogError(500,
+                                exceptionHandlerFeature.Error,
+                                exceptionHandlerFeature.Error.Message);
+                        }
                         context.Response.StatusCode = 500;
                         await context.Response.WriteAsync("An unexpected error, try again later");
                     });
@@ -68,6 +81,8 @@ namespace Core2
                 cfg.CreateMap<Book, BookDto>();
                 cfg.CreateMap<AuthorForCreationDto, Author>();
                 cfg.CreateMap<BookForCreationDto, Book>();
+                cfg.CreateMap<BookForUpdateDto, Book>();
+                cfg.CreateMap<Book, BookForUpdateDto>();
             });
 
             app.UseMvc();

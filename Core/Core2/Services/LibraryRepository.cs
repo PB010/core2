@@ -86,7 +86,9 @@ namespace Core2.Services
 
             if (author != null)
             {
-                if (book.Id == null)
+                // if there isn't an id filled out (ie: we're not upserting),
+                // we should generate one
+                if (book.Id == Guid.Empty)
                 {
                     book.Id = Guid.NewGuid();
                 }

@@ -50,5 +50,30 @@ namespace Core2.Controllers
                 new {authorId = authorInDb.Id},
                 Mapper.Map<AuthorDto>(authorInDb));
         }
+
+        [HttpPost("{id}")]
+        public IActionResult BlockAuthorCreation(Guid id)
+        {
+            if (_libraryRepository.AuthorExists(id))
+                return Conflict();
+
+            return NotFound();
+        }
+
+        [HttpDelete("{authorId}")]
+        public IActionResult DeleteAuthor(Guid authorId)
+        {
+            var author = _libraryRepository.GetAuthor(authorId);
+
+            if (author == null)
+                return NotFound();
+
+            _libraryRepository.DeleteAuthor(author);
+
+            if(!_libraryRepository.Save())
+                throw new Exception();
+
+            return NoContent();
+        }
     }
 }
