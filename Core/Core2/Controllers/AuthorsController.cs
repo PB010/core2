@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Core2.Entities;
+using Core2.Helpers;
 using Core2.Models;
 using Core2.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -19,9 +20,11 @@ namespace Core2.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAuthors()
+        public IActionResult GetAuthors(AuthorsResourceParameters authorsResourceParameters)
         {
-            return Ok(_libraryRepository.GetAuthors().Select(Mapper.Map<Author, AuthorDto>));
+            return Ok(_libraryRepository
+                .GetAuthors(authorsResourceParameters)
+                .Select(Mapper.Map<Author, AuthorDto>));
         }
 
         [HttpGet("{authorId}", Name = "GetNewAuthor")]

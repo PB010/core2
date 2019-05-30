@@ -3,45 +3,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Core2.Migrations
 {
-    public partial class Initial : Migration
+    public partial class SeedingTheDb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.CreateTable(
-                name: "Authors",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(nullable: false),
-                    FirstName = table.Column<string>(maxLength: 50, nullable: false),
-                    LastName = table.Column<string>(maxLength: 50, nullable: false),
-                    DateOfBirth = table.Column<DateTimeOffset>(nullable: false),
-                    Genre = table.Column<string>(maxLength: 50, nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Authors", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Books",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(nullable: false),
-                    Title = table.Column<string>(maxLength: 100, nullable: false),
-                    Description = table.Column<string>(nullable: true),
-                    AuthorId = table.Column<Guid>(nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Books", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Books_Authors_AuthorId",
-                        column: x => x.AuthorId,
-                        principalTable: "Authors",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
             migrationBuilder.InsertData(
                 table: "Authors",
                 columns: new[] { "Id", "DateOfBirth", "FirstName", "Genre", "LastName" },
@@ -72,20 +37,94 @@ namespace Core2.Migrations
                     { new Guid("e57b605f-8b3c-4089-b672-6ce9e6d6c23f"), new Guid("f74d6899-9ed2-4137-9876-66b070553f8f"), "The Hitchhiker's Guide to the Galaxy is the first of five books in the Hitchhiker's Guide to the Galaxy comedy science fiction 'trilogy' by Douglas Adams.", "The Hitchhiker's Guide to the Galaxy" },
                     { new Guid("1325360c-8253-473a-a20f-55c269c20407"), new Guid("a1da1d8e-1988-4634-b538-a01709477b77"), "Easy Money or Snabba cash is a novel from 2006 by Jens Lapidus. It has been a success in term of sales, and the paperback was the fourth best seller of Swedish novels in 2007.", "Easy Money" }
                 });
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Books_AuthorId",
-                table: "Books",
-                column: "AuthorId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "Books");
+            migrationBuilder.DeleteData(
+                table: "Books",
+                keyColumn: "Id",
+                keyValue: new Guid("01457142-358f-495f-aafa-fb23de3d67e9"));
 
-            migrationBuilder.DropTable(
-                name: "Authors");
+            migrationBuilder.DeleteData(
+                table: "Books",
+                keyColumn: "Id",
+                keyValue: new Guid("09af5a52-9421-44e8-a2bb-a6b9ccbc8239"));
+
+            migrationBuilder.DeleteData(
+                table: "Books",
+                keyColumn: "Id",
+                keyValue: new Guid("1325360c-8253-473a-a20f-55c269c20407"));
+
+            migrationBuilder.DeleteData(
+                table: "Books",
+                keyColumn: "Id",
+                keyValue: new Guid("447eb762-95e9-4c31-95e1-b20053fbe215"));
+
+            migrationBuilder.DeleteData(
+                table: "Books",
+                keyColumn: "Id",
+                keyValue: new Guid("60188a2b-2784-4fc4-8df8-8919ff838b0b"));
+
+            migrationBuilder.DeleteData(
+                table: "Books",
+                keyColumn: "Id",
+                keyValue: new Guid("70a1f9b9-0a37-4c1a-99b1-c7709fc64167"));
+
+            migrationBuilder.DeleteData(
+                table: "Books",
+                keyColumn: "Id",
+                keyValue: new Guid("9edf91ee-ab77-4521-a402-5f188bc0c577"));
+
+            migrationBuilder.DeleteData(
+                table: "Books",
+                keyColumn: "Id",
+                keyValue: new Guid("a3749477-f823-4124-aa4a-fc9ad5e79cd6"));
+
+            migrationBuilder.DeleteData(
+                table: "Books",
+                keyColumn: "Id",
+                keyValue: new Guid("bc4c35c3-3857-4250-9449-155fcf5109ec"));
+
+            migrationBuilder.DeleteData(
+                table: "Books",
+                keyColumn: "Id",
+                keyValue: new Guid("c7ba6add-09c4-45f8-8dd0-eaca221e5d93"));
+
+            migrationBuilder.DeleteData(
+                table: "Books",
+                keyColumn: "Id",
+                keyValue: new Guid("e57b605f-8b3c-4089-b672-6ce9e6d6c23f"));
+
+            migrationBuilder.DeleteData(
+                table: "Authors",
+                keyColumn: "Id",
+                keyValue: new Guid("25320c5e-f58a-4b1f-b63a-8ee07a840bdf"));
+
+            migrationBuilder.DeleteData(
+                table: "Authors",
+                keyColumn: "Id",
+                keyValue: new Guid("412c3012-d891-4f5e-9613-ff7aa63e6bb3"));
+
+            migrationBuilder.DeleteData(
+                table: "Authors",
+                keyColumn: "Id",
+                keyValue: new Guid("578359b7-1967-41d6-8b87-64ab7605587e"));
+
+            migrationBuilder.DeleteData(
+                table: "Authors",
+                keyColumn: "Id",
+                keyValue: new Guid("76053df4-6687-4353-8937-b45556748abe"));
+
+            migrationBuilder.DeleteData(
+                table: "Authors",
+                keyColumn: "Id",
+                keyValue: new Guid("a1da1d8e-1988-4634-b538-a01709477b77"));
+
+            migrationBuilder.DeleteData(
+                table: "Authors",
+                keyColumn: "Id",
+                keyValue: new Guid("f74d6899-9ed2-4137-9876-66b070553f8f"));
         }
     }
 }

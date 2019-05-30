@@ -26,3 +26,17 @@ C:\Users\User\Desktop\VS\core2\Core\Core2\obj\Debug\netcoreapp2.1\Core2.Assembly
 C:\Users\User\Desktop\VS\core2\Core\Core2\obj\Debug\netcoreapp2.1\Core2.RazorTargetAssemblyInfo.cache
 C:\Users\User\Desktop\VS\core2\Core\Core2\obj\Debug\netcoreapp2.1\Core2.dll
 C:\Users\User\Desktop\VS\core2\Core\Core2\obj\Debug\netcoreapp2.1\Core2.pdb
+C:\Users\bIur\Desktop\Asp.Net\Library\Core\Core2\bin\Debug\netcoreapp2.1\Core2.deps.json
+C:\Users\bIur\Desktop\Asp.Net\Library\Core\Core2\bin\Debug\netcoreapp2.1\Core2.runtimeconfig.json
+C:\Users\bIur\Desktop\Asp.Net\Library\Core\Core2\bin\Debug\netcoreapp2.1\Core2.runtimeconfig.dev.json
+C:\Users\bIur\Desktop\Asp.Net\Library\Core\Core2\bin\Debug\netcoreapp2.1\Core2.dll
+C:\Users\bIur\Desktop\Asp.Net\Library\Core\Core2\bin\Debug\netcoreapp2.1\Core2.pdb
+C:\Users\bIur\Desktop\Asp.Net\Library\Core\Core2\obj\Debug\netcoreapp2.1\Core2.csprojAssemblyReference.cache
+C:\Users\bIur\Desktop\Asp.Net\Library\Core\Core2\obj\Debug\netcoreapp2.1\Core2.csproj.CoreCompileInputs.cache
+C:\Users\bIur\Desktop\Asp.Net\Library\Core\Core2\obj\Debug\netcoreapp2.1\Core2.RazorAssemblyInfo.cache
+C:\Users\bIur\Desktop\Asp.Net\Library\Core\Core2\obj\Debug\netcoreapp2.1\Core2.RazorAssemblyInfo.cs
+C:\Users\bIur\Desktop\Asp.Net\Library\Core\Core2\obj\Debug\netcoreapp2.1\Core2.AssemblyInfoInputs.cache
+C:\Users\bIur\Desktop\Asp.Net\Library\Core\Core2\obj\Debug\netcoreapp2.1\Core2.AssemblyInfo.cs
+C:\Users\bIur\Desktop\Asp.Net\Library\Core\Core2\obj\Debug\netcoreapp2.1\Core2.RazorTargetAssemblyInfo.cache
+C:\Users\bIur\Desktop\Asp.Net\Library\Core\Core2\obj\Debug\netcoreapp2.1\Core2.dll
+C:\Users\bIur\Desktop\Asp.Net\Library\Core\Core2\obj\Debug\netcoreapp2.1\Core2.pdb

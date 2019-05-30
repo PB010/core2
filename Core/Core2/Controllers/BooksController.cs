@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Linq;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.Logging;
 
 namespace Core2.Controllers
 {
@@ -13,10 +15,13 @@ namespace Core2.Controllers
     public class BooksController : Controller
     {
         private readonly ILibraryRepository _libraryRepository;
+        private readonly ILogger<BooksController> _logger;
 
-        public BooksController(ILibraryRepository libraryRepository)
+        public BooksController(ILibraryRepository libraryRepository,
+            ILogger<BooksController> logger)
         {
             _libraryRepository = libraryRepository;
+            _logger = logger;
         }
 
         [HttpGet]
@@ -84,6 +89,8 @@ namespace Core2.Controllers
 
             if(!_libraryRepository.Save())
                 throw new Exception();
+
+            _logger.LogInformation(100, $"Book {bookId} for author {authorId} failed on save.");
 
             return NoContent();
         }

@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Core2.Migrations
 {
     [DbContext(typeof(LibraryContext))]
-    [Migration("20190529064432_AddedMaxLengthToBookDescription")]
-    partial class AddedMaxLengthToBookDescription
+    [Migration("20190530195704_SeedingTheDb")]
+    partial class SeedingTheDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
