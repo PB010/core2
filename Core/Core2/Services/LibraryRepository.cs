@@ -19,6 +19,14 @@ namespace Core2.Services
             return _context.Authors.OrderBy(a => a.FirstName).ThenBy(a => a.LastName);
         }
 
+        public IEnumerable<Author> GetAuthors(IEnumerable<Guid> authorIds)
+        {
+            return _context.Authors.Where(a => authorIds.Contains(a.Id))
+                .OrderBy(a => a.FirstName)
+                .ThenBy(a => a.LastName)
+                .ToList();
+        }
+
         public Author GetAuthor(Guid authorId)
         {
             return _context.Authors.SingleOrDefault(a => a.Id == authorId);
@@ -58,6 +66,13 @@ namespace Core2.Services
         {
             return _context.Books
                 .Where(b => b.AuthorId == authorId).OrderBy(b => b.Title).ToList();
+        }
+
+        public IEnumerable<Book> GetBooksForAuthor(Guid authorId, IEnumerable<Guid> bookIds)
+        {
+            return _context.Books.Where(b => bookIds.Contains(b.Id) && b.AuthorId == authorId)
+                .OrderBy(b => b.Title)
+                .ToList();
         }
 
         public Book GetBookForAuthor(Guid authorId, Guid bookId)
