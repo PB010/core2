@@ -7,7 +7,7 @@ namespace Core2.Services
 {
     public interface ILibraryRepository
     {
-        IEnumerable<Author> GetAuthors(AuthorsResourceParameters authorsResourceParameters);
+        PagedList<Author> GetAuthors(AuthorsResourceParameters authorsResourceParameters);
         IEnumerable<Author> GetAuthors(IEnumerable<Guid> ids);
         Author GetAuthor(Guid authorId);
         void AddAuthor(Author author);

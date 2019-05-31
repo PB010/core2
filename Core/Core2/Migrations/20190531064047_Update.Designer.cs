@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Core2.Migrations
 {
     [DbContext(typeof(LibraryContext))]
-    [Migration("20190530195704_SeedingTheDb")]
-    partial class SeedingTheDb
+    [Migration("20190531064047_Update")]
+    partial class Update
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
