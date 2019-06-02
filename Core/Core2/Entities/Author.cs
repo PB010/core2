@@ -15,6 +15,7 @@ namespace Core2.Entities
         public string LastName { get; set; }
         [Required]
         public DateTimeOffset DateOfBirth { get; set; }
+        public DateTimeOffset? DateOfDeath { get; set; }    
         [Required]
         [MaxLength(50)]
         public string Genre { get; set; }
@@ -24,10 +25,16 @@ namespace Core2.Entities
 
         public int GetAge()
         {
-            var currentDate = DateTime.UtcNow;
-            var age = currentDate.Year - DateOfBirth.Year;
+            var dateToCalculateTo = DateTime.UtcNow;
 
-            if (currentDate < DateOfBirth.AddYears(age))
+            if (DateOfDeath != null)
+            {
+                dateToCalculateTo = DateOfDeath.Value.UtcDateTime;
+            }
+
+            var age = dateToCalculateTo.Year - DateOfBirth.Year;
+
+            if (dateToCalculateTo < DateOfBirth.AddYears(age))
             {
                 age--;
             }

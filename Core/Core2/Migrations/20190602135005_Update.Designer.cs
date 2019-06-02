@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Core2.Migrations
 {
     [DbContext(typeof(LibraryContext))]
-    [Migration("20190531064047_Update")]
+    [Migration("20190602135005_Update")]
     partial class Update
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
