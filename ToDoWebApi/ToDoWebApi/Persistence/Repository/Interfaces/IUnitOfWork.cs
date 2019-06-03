@@ -1,9 +1,11 @@
-﻿using ToDoWebApi.Persistence.Repository.Interfaces.Repository;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using ToDoWebApi.Models;
 
 namespace ToDoWebApi.Persistence.Repository.Interfaces
 {
     public interface IUnitOfWork
     {
-        IToDoRepository ToDoRepository { get; }
+        Task<IEnumerable<ToDoDto>> GetAllToDos();
     }
 }

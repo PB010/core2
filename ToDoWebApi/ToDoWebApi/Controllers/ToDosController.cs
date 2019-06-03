@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using ToDoWebApi.Models;
 using ToDoWebApi.Persistence.Repository.Interfaces;
-using ToDoWebApi.Persistence.Repository.Interfaces.Repository;
 
 namespace ToDoWebApi.Controllers
 {
@@ -20,7 +19,7 @@ namespace ToDoWebApi.Controllers
         [HttpGet]
         public Task<IEnumerable<ToDoDto>> GetAllToDos()
         {
-            return _unitOfWork.ToDoRepository.GetAllToDos();
+            return _unitOfWork.GetAllToDos();
         }
     }
 }
