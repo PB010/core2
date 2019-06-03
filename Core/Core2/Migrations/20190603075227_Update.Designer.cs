@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Core2.Migrations
 {
     [DbContext(typeof(LibraryContext))]
-    [Migration("20190602135005_Update")]
+    [Migration("20190603075227_Update")]
     partial class Update
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,6 +27,8 @@ namespace Core2.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<DateTimeOffset>("DateOfBirth");
+
+                    b.Property<DateTimeOffset?>("DateOfDeath");
 
                     b.Property<string>("FirstName")
                         .IsRequired()

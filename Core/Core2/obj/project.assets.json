@@ -15,6 +15,24 @@
           "lib/netstandard2.0/AutoMapper.dll": {}
         }
       },
+      "Marvin.Cache.Headers/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "1.0.2",
+          "Microsoft.AspNetCore.Mvc.Abstractions": "1.0.2",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.2",
+          "Microsoft.Extensions.Logging.Abstractions": "1.0.2",
+          "Microsoft.Extensions.Options": "1.0.2",
+          "Microsoft.Net.Http.Headers": "1.0.2",
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.6/Marvin.Cache.Headers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Marvin.Cache.Headers.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -4374,6 +4392,18 @@
         "lib/netstandard2.0/AutoMapper.dll",
         "lib/netstandard2.0/AutoMapper.pdb",
         "lib/netstandard2.0/AutoMapper.xml"
+      ]
+    },
+    "Marvin.Cache.Headers/3.1.0": {
+      "sha512": "Az4T9z/Gy+zJSVlfWOghePrmoXsN8v3CRdmp1ZJ12E1bWcaIvBQD2AV4r3/0PM8sNL+d2algt4gFFsLmAzvfIg==",
+      "type": "package",
+      "path": "marvin.cache.headers/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.6/Marvin.Cache.Headers.dll",
+        "marvin.cache.headers.3.1.0.nupkg.sha512",
+        "marvin.cache.headers.nuspec"
       ]
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -11867,6 +11897,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "AutoMapper >= 8.1.0",
+      "Marvin.Cache.Headers >= 3.1.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
@@ -11874,23 +11905,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bIur\\.nuget\\packages\\": {},
+    "C:\\Users\\User\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bIur\\Desktop\\Asp.Net\\Library\\Core\\Core2\\Core2.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\.NET Core\\Core\\Core2\\Core2.csproj",
       "projectName": "Core2",
-      "projectPath": "C:\\Users\\bIur\\Desktop\\Asp.Net\\Library\\Core\\Core2\\Core2.csproj",
-      "packagesPath": "C:\\Users\\bIur\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bIur\\Desktop\\Asp.Net\\Library\\Core\\Core2\\obj\\",
+      "projectPath": "C:\\Users\\User\\Desktop\\.NET Core\\Core\\Core2\\Core2.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\.NET Core\\Core\\Core2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\bIur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11918,6 +11949,10 @@
             "target": "Package",
             "version": "[8.1.0, )"
           },
+          "Marvin.Cache.Headers": {
+            "target": "Package",
+            "version": "[3.1.0, )"
+          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",
@@ -11930,7 +11965,6 @@
             "version": "[2.1.2, )"
           },
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true

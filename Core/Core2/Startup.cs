@@ -81,6 +81,11 @@ namespace Core2
 
             services.AddTransient<IPropertyMappingService, PropertyMappingService>();
             services.AddTransient<ITypeHelperService, TypeHelperService>();
+
+            services.AddHttpCacheHeaders((expirationModelOptions) =>
+                { expirationModelOptions.MaxAge = 600;},
+                (validationModelObject) =>
+                {validationModelObject.MustRevalidate = true;});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -128,6 +133,8 @@ namespace Core2
                 cfg.CreateMap<Book, BookForUpdateDto>();
                 cfg.CreateMap<AuthorForCreationWithDateOfDeathDto, Author>();
             });
+
+            app.UseHttpCacheHeaders();
 
             app.UseMvc();
         }

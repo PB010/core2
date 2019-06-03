@@ -1,0 +1,14 @@
+C:\Users\User\Desktop\.NET Core\ToDoWebApi\ToDoWebApi\bin\Debug\netcoreapp2.1\ToDoWebApi.deps.json
+C:\Users\User\Desktop\.NET Core\ToDoWebApi\ToDoWebApi\bin\Debug\netcoreapp2.1\ToDoWebApi.runtimeconfig.json
+C:\Users\User\Desktop\.NET Core\ToDoWebApi\ToDoWebApi\bin\Debug\netcoreapp2.1\ToDoWebApi.runtimeconfig.dev.json
+C:\Users\User\Desktop\.NET Core\ToDoWebApi\ToDoWebApi\bin\Debug\netcoreapp2.1\ToDoWebApi.dll
+C:\Users\User\Desktop\.NET Core\ToDoWebApi\ToDoWebApi\bin\Debug\netcoreapp2.1\ToDoWebApi.pdb
+C:\Users\User\Desktop\.NET Core\ToDoWebApi\ToDoWebApi\obj\Debug\netcoreapp2.1\ToDoWebApi.csprojAssemblyReference.cache
+C:\Users\User\Desktop\.NET Core\ToDoWebApi\ToDoWebApi\obj\Debug\netcoreapp2.1\ToDoWebApi.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\.NET Core\ToDoWebApi\ToDoWebApi\obj\Debug\netcoreapp2.1\ToDoWebApi.RazorAssemblyInfo.cache
+C:\Users\User\Desktop\.NET Core\ToDoWebApi\ToDoWebApi\obj\Debug\netcoreapp2.1\ToDoWebApi.RazorAssemblyInfo.cs
+C:\Users\User\Desktop\.NET Core\ToDoWebApi\ToDoWebApi\obj\Debug\netcoreapp2.1\ToDoWebApi.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\.NET Core\ToDoWebApi\ToDoWebApi\obj\Debug\netcoreapp2.1\ToDoWebApi.AssemblyInfo.cs
+C:\Users\User\Desktop\.NET Core\ToDoWebApi\ToDoWebApi\obj\Debug\netcoreapp2.1\ToDoWebApi.RazorTargetAssemblyInfo.cache
+C:\Users\User\Desktop\.NET Core\ToDoWebApi\ToDoWebApi\obj\Debug\netcoreapp2.1\ToDoWebApi.dll
+C:\Users\User\Desktop\.NET Core\ToDoWebApi\ToDoWebApi\obj\Debug\netcoreapp2.1\ToDoWebApi.pdb
