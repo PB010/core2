@@ -14,5 +14,29 @@ namespace ToDoWebApi.Entities
         public int ToDoPrioritiesId { get; set; }
         public ToDoPriorities ToDoPriority { get; set; }
 
+        public string GetStatus()
+        {
+            return Enum.GetName(typeof(ToDoStatus), Status);
+        }
+
+        public string GetTime()
+        {
+            return ToDoTime.ToString("dd MMM HH:mm");
+        }
+
+        public string CreatedAtConverter()
+        {
+            return CreatedAt.ToString("dd MMM HH:mm");
+        }
+
+        public string UpdatedAtConverter()
+        {
+            return UpdatedAt != null ? UpdatedAt?.ToString("dd MMM HH:mm") : "";
+        }
+
+        public string PriorityName()
+        {
+            return ToDoPriority.Name;
+        }
     }
 }

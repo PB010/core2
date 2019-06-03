@@ -1,7 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using ToDoWebApi.Entities;
 using ToDoWebApi.Entities.EntityConfiguration;
 
-namespace ToDoWebApi.Entities
+namespace ToDoWebApi.Persistence
 {
     public class ToDoContext : DbContext
     {

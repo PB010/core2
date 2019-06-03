@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ToDoWebApi.Entities;
+using ToDoWebApi.Persistence;
 
 namespace ToDoWebApi.Migrations
 {
