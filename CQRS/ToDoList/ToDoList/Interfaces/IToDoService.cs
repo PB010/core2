@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ToDoList.Interfaces
 {
-    public class IToDoService
+    public interface IToDoService
     {
     }
 }
