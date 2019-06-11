@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\.NET Core\\CQRS\\ToDoList\\ToDoList.Infrastructure\\ToDoList.Infrastructure.csproj": {}
+    "C:\\Users\\bIur\\Desktop\\Asp.Net\\ToDoCqrs\\CQRS\\ToDoList\\ToDoList.Infrastructure\\ToDoList.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\.NET Core\\CQRS\\ToDoList\\ToDoList.Infrastructure\\ToDoList.Infrastructure.csproj": {
+    "C:\\Users\\bIur\\Desktop\\Asp.Net\\ToDoCqrs\\CQRS\\ToDoList\\ToDoList.Infrastructure\\ToDoList.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\.NET Core\\CQRS\\ToDoList\\ToDoList.Infrastructure\\ToDoList.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\bIur\\Desktop\\Asp.Net\\ToDoCqrs\\CQRS\\ToDoList\\ToDoList.Infrastructure\\ToDoList.Infrastructure.csproj",
         "projectName": "ToDoList.Infrastructure",
-        "projectPath": "C:\\Users\\User\\Desktop\\.NET Core\\CQRS\\ToDoList\\ToDoList.Infrastructure\\ToDoList.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\.NET Core\\CQRS\\ToDoList\\ToDoList.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\bIur\\Desktop\\Asp.Net\\ToDoCqrs\\CQRS\\ToDoList\\ToDoList.Infrastructure\\ToDoList.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\bIur\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bIur\\Desktop\\Asp.Net\\ToDoCqrs\\CQRS\\ToDoList\\ToDoList.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bIur\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,8 +30,11 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\.NET Core\\CQRS\\ToDoList\\ToDoList.Persistence\\ToDoList.Persistence.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\.NET Core\\CQRS\\ToDoList\\ToDoList.Persistence\\ToDoList.Persistence.csproj"
+              "C:\\Users\\bIur\\Desktop\\Asp.Net\\ToDoCqrs\\CQRS\\ToDoList\\ToDoList.Persistence\\ToDoList.Persistence.csproj": {
+                "projectPath": "C:\\Users\\bIur\\Desktop\\Asp.Net\\ToDoCqrs\\CQRS\\ToDoList\\ToDoList.Persistence\\ToDoList.Persistence.csproj"
+              },
+              "C:\\Users\\bIur\\Desktop\\Asp.Net\\ToDoCqrs\\CQRS\\ToDoList\\ToDoList\\ToDoList.csproj": {
+                "projectPath": "C:\\Users\\bIur\\Desktop\\Asp.Net\\ToDoCqrs\\CQRS\\ToDoList\\ToDoList\\ToDoList.csproj"
               }
             }
           }
@@ -72,20 +75,20 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\.NET Core\\CQRS\\ToDoList\\ToDoList.Persistence\\ToDoList.Persistence.csproj": {
+    "C:\\Users\\bIur\\Desktop\\Asp.Net\\ToDoCqrs\\CQRS\\ToDoList\\ToDoList.Persistence\\ToDoList.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\.NET Core\\CQRS\\ToDoList\\ToDoList.Persistence\\ToDoList.Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\bIur\\Desktop\\Asp.Net\\ToDoCqrs\\CQRS\\ToDoList\\ToDoList.Persistence\\ToDoList.Persistence.csproj",
         "projectName": "ToDoList.Persistence",
-        "projectPath": "C:\\Users\\User\\Desktop\\.NET Core\\CQRS\\ToDoList\\ToDoList.Persistence\\ToDoList.Persistence.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\.NET Core\\CQRS\\ToDoList\\ToDoList.Persistence\\obj\\",
+        "projectPath": "C:\\Users\\bIur\\Desktop\\Asp.Net\\ToDoCqrs\\CQRS\\ToDoList\\ToDoList.Persistence\\ToDoList.Persistence.csproj",
+        "packagesPath": "C:\\Users\\bIur\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bIur\\Desktop\\Asp.Net\\ToDoCqrs\\CQRS\\ToDoList\\ToDoList.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bIur\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -120,6 +123,85 @@
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
               "version": "[2.1.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\bIur\\Desktop\\Asp.Net\\ToDoCqrs\\CQRS\\ToDoList\\ToDoList\\ToDoList.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\bIur\\Desktop\\Asp.Net\\ToDoCqrs\\CQRS\\ToDoList\\ToDoList\\ToDoList.csproj",
+        "projectName": "ToDoList",
+        "projectPath": "C:\\Users\\bIur\\Desktop\\Asp.Net\\ToDoCqrs\\CQRS\\ToDoList\\ToDoList\\ToDoList.csproj",
+        "packagesPath": "C:\\Users\\bIur\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bIur\\Desktop\\Asp.Net\\ToDoCqrs\\CQRS\\ToDoList\\ToDoList\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\bIur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\bIur\\Desktop\\Asp.Net\\ToDoCqrs\\CQRS\\ToDoList\\ToDoList.Persistence\\ToDoList.Persistence.csproj": {
+                "projectPath": "C:\\Users\\bIur\\Desktop\\Asp.Net\\ToDoCqrs\\CQRS\\ToDoList\\ToDoList.Persistence\\ToDoList.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.2, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",

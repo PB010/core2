@@ -12,6 +12,13 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ToDoList.Persistence\ToDoList.Persistence.csproj" />
+    <ProjectReference Include="..\ToDoList\ToDoList.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\..\..\..\..\.nuget\packages\automapper\8.1.1\lib\netstandard2.0\AutoMapper.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

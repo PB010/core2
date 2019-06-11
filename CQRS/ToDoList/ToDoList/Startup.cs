@@ -1,12 +1,16 @@
-﻿using MediatR;
+﻿using AutoMapper;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Reflection;
+using ToDoList.Dtos;
 using ToDoList.Persistence;
 using ToDoList.Persistence.Helper;
+using ToDoList.Persistence.Models;
 
 namespace ToDoList
 {
@@ -28,6 +32,7 @@ namespace ToDoList
                         .GetTypeInfo().Assembly.GetName().Name)));
 
             services.AddMediatR(typeof(Startup));
+            //services.AddScoped<IToDoService, ToDoService>();
             services.AddMvc();
         }
 
@@ -39,6 +44,20 @@ namespace ToDoList
                 app.UseDeveloperExceptionPage();
                 DbSeeder.Migrate(context);
             }
+
+#pragma warning disable 618
+            Mapper.Initialize(cfg =>
+#pragma warning restore 618
+            {
+                cfg.CreateMap<ToDo, ToDoDto>();
+                cfg.CreateMap<ToDoForCreationDto, ToDo>().ForMember(dest => dest.ToDoTime,
+                        opt => opt.MapFrom(src => src.ConvertTime()))
+                    .ForMember(dest => dest.CreatedAt, opt => opt.MapFrom(
+                        src => DateTime.Now))
+                    .ForMember(dest => dest.Status, opt => opt.MapFrom(
+                        src => ToDoStatus.Open));
+            });
+
 
             app.UseMvc();
 

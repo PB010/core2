@@ -9,3 +9,11 @@ C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList\obj\Debug\netcoreapp2.1\T
 C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList\obj\Debug\netcoreapp2.1\ToDoList.AssemblyInfoInputs.cache
 C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList\obj\Debug\netcoreapp2.1\ToDoList.AssemblyInfo.cs
 C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList\obj\Debug\netcoreapp2.1\ToDoList.RazorTargetAssemblyInfo.cache
+C:\Users\bIur\Desktop\Asp.Net\ToDoCqrs\CQRS\ToDoList\ToDoList\bin\Debug\netcoreapp2.1\ToDoList.Persistence.dll
+C:\Users\bIur\Desktop\Asp.Net\ToDoCqrs\CQRS\ToDoList\ToDoList\obj\Debug\netcoreapp2.1\ToDoList.csprojAssemblyReference.cache
+C:\Users\bIur\Desktop\Asp.Net\ToDoCqrs\CQRS\ToDoList\ToDoList\obj\Debug\netcoreapp2.1\ToDoList.csproj.CoreCompileInputs.cache
+C:\Users\bIur\Desktop\Asp.Net\ToDoCqrs\CQRS\ToDoList\ToDoList\obj\Debug\netcoreapp2.1\ToDoList.RazorAssemblyInfo.cache
+C:\Users\bIur\Desktop\Asp.Net\ToDoCqrs\CQRS\ToDoList\ToDoList\obj\Debug\netcoreapp2.1\ToDoList.RazorAssemblyInfo.cs
+C:\Users\bIur\Desktop\Asp.Net\ToDoCqrs\CQRS\ToDoList\ToDoList\obj\Debug\netcoreapp2.1\ToDoList.AssemblyInfoInputs.cache
+C:\Users\bIur\Desktop\Asp.Net\ToDoCqrs\CQRS\ToDoList\ToDoList\obj\Debug\netcoreapp2.1\ToDoList.AssemblyInfo.cs
+C:\Users\bIur\Desktop\Asp.Net\ToDoCqrs\CQRS\ToDoList\ToDoList\obj\Debug\netcoreapp2.1\ToDoList.RazorTargetAssemblyInfo.cache
