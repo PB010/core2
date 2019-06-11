@@ -1,0 +1,11 @@
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Persistence\bin\Debug\netcoreapp2.1\ToDoList.Persistence.deps.json
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Persistence\bin\Debug\netcoreapp2.1\ToDoList.Persistence.dll
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Persistence\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Persistence\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Configuration.dll
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Persistence\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.xml
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Persistence\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Configuration.xml
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Persistence\obj\Debug\netcoreapp2.1\ToDoList.Persistence.csprojAssemblyReference.cache
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Persistence\obj\Debug\netcoreapp2.1\ToDoList.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Persistence\obj\Debug\netcoreapp2.1\ToDoList.Persistence.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Persistence\obj\Debug\netcoreapp2.1\ToDoList.Persistence.AssemblyInfo.cs
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Persistence\obj\Debug\netcoreapp2.1\ToDoList.Persistence.csproj.CopyComplete
