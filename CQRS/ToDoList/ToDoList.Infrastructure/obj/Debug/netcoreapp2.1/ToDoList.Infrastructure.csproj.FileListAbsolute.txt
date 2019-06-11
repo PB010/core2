@@ -1,0 +1,6 @@
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Infrastructure\bin\Debug\netcoreapp2.1\ToDoList.Infrastructure.deps.json
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Infrastructure\bin\Debug\netcoreapp2.1\ToDoList.Infrastructure.dll
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Infrastructure\obj\Debug\netcoreapp2.1\ToDoList.Infrastructure.csprojAssemblyReference.cache
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Infrastructure\obj\Debug\netcoreapp2.1\ToDoList.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Infrastructure\obj\Debug\netcoreapp2.1\ToDoList.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Infrastructure\obj\Debug\netcoreapp2.1\ToDoList.Infrastructure.AssemblyInfo.cs

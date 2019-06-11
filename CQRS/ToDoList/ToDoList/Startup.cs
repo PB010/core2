@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using MediatR;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -26,6 +27,7 @@ namespace ToDoList
                     b => b.MigrationsAssembly(typeof(ToDoDbContext)
                         .GetTypeInfo().Assembly.GetName().Name)));
 
+            services.AddMediatR(typeof(Startup));
             services.AddMvc();
         }
 

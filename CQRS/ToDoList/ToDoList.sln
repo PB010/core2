@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDoList", "ToDoList\ToDoList.csproj", "{FB3CB8E3-0E8A-493F-AF7F-E790E7678E7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList.Persistence", "ToDoList.Persistence\ToDoList.Persistence.csproj", "{A61AB629-8443-4E19-866E-7DA4804ABF0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDoList.Persistence", "ToDoList.Persistence\ToDoList.Persistence.csproj", "{A61AB629-8443-4E19-866E-7DA4804ABF0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList.Infrastructure", "ToDoList.Infrastructure\ToDoList.Infrastructure.csproj", "{567B6A8B-185F-4889-8B94-55E040671E69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A61AB629-8443-4E19-866E-7DA4804ABF0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A61AB629-8443-4E19-866E-7DA4804ABF0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A61AB629-8443-4E19-866E-7DA4804ABF0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{567B6A8B-185F-4889-8B94-55E040671E69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{567B6A8B-185F-4889-8B94-55E040671E69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{567B6A8B-185F-4889-8B94-55E040671E69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{567B6A8B-185F-4889-8B94-55E040671E69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
