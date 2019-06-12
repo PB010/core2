@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ToDoList.Application.Interfaces;
+using ToDoList.Application.ToDos.Models;
 using ToDoList.Persistence;
 using ToDoList.Persistence.Models;
 
