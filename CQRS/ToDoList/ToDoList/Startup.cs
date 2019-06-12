@@ -7,7 +7,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Reflection;
-using ToDoList.Dtos;
+using ToDoList.Application.Interfaces;
+using ToDoList.Application.ToDos.Models;
+using ToDoList.Infrastructure.Services;
 using ToDoList.Persistence;
 using ToDoList.Persistence.Helper;
 using ToDoList.Persistence.Models;
@@ -32,7 +34,7 @@ namespace ToDoList
                         .GetTypeInfo().Assembly.GetName().Name)));
 
             services.AddMediatR(typeof(Startup));
-            //services.AddScoped<IToDoService, ToDoService>();
+            services.AddScoped<IToDoService, ToDoService>();
             services.AddMvc();
         }
 

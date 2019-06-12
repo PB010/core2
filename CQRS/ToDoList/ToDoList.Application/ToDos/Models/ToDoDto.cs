@@ -1,11 +1,8 @@
-﻿using System.Collections.Generic;
-using ToDoList.Dtos;
-using ToDoList.Interfaces;
-using ToDoList.Persistence.Models;
+﻿using ToDoList.Persistence.Models;
 
-namespace ToDoList.ToDos.Queries
+namespace ToDoList.Application.ToDos.Models
 {
-    public class GetAllToDosQuery : IQuery<List<ToDoDto>>
+    public class ToDoDto
     {
         public int Id { get; set; }
         public string Name { get; set; }

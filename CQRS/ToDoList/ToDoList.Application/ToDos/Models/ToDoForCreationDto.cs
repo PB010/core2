@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ToDoList.Dtos
+namespace ToDoList.Application.ToDos.Models
 {
     public class ToDoForCreationDto
     {

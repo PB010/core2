@@ -1,8 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using ToDoList.Dtos;
+﻿using System.Threading.Tasks;
 
-namespace ToDoList.Interfaces
+namespace ToDoList.Application.Interfaces
 {
     public interface IToDoService
     {

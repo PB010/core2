@@ -4,3 +4,5 @@ C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Infrastructure\obj\Debug\
 C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Infrastructure\obj\Debug\netcoreapp2.1\ToDoList.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Infrastructure\obj\Debug\netcoreapp2.1\ToDoList.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Infrastructure\obj\Debug\netcoreapp2.1\ToDoList.Infrastructure.AssemblyInfo.cs
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Infrastructure\bin\Debug\netcoreapp2.1\ToDoList.Application.dll
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Infrastructure\bin\Debug\netcoreapp2.1\ToDoList.Persistence.dll
