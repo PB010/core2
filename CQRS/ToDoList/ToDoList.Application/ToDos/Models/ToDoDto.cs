@@ -1,4 +1,5 @@
-﻿using ToDoList.Persistence.Models;
+﻿using System;
+using ToDoList.Persistence.Models;
 
 namespace ToDoList.Application.ToDos.Models
 {
@@ -10,7 +11,7 @@ namespace ToDoList.Application.ToDos.Models
         public string ToDoTime { get; set; }
         public string CreatedAt { get; set; }
         public string UpdatedAt { get; set; }
-        public ToDoStatus Status { get; set; }
-        public ToDoPriorities ToDoPriority { get; set; }
+        public string Status { get; set; }
+        public string ToDoPriority { get; set; }
     }
 }

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "f60f79fb9a24362cf645b1273cef72fdbb0e9511"
+    "signature": "e0fa58db13ac1c2b083ec79f2811d01d57f97662"
   },
   "compilationOptions": {
     "defines": [
@@ -24,16 +24,36 @@
     ".NETCoreApp,Version=v2.1": {
       "ToDoList/1.0.0": {
         "dependencies": {
+          "AutoMapper": "8.1.1",
+          "MediatR": "7.0.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
-          "Microsoft.NETCore.App": "2.1.0"
+          "Microsoft.NETCore.App": "2.1.0",
+          "ToDoList.Application": "1.0.0",
+          "ToDoList.Infrastructure": "1.0.0",
+          "ToDoList.Persistence": "1.0.0"
         },
         "runtime": {
           "ToDoList.dll": {}
         },
         "compile": {
           "ToDoList.dll": {}
+        }
+      },
+      "AutoMapper/8.1.1": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "System.Reflection.Emit": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.dll": {
+            "assemblyVersion": "8.1.1.0",
+            "fileVersion": "8.1.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.dll": {}
         }
       },
       "MediatR/7.0.0": {
@@ -232,6 +252,48 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.0"
+        }
+      },
+      "ToDoList.Application/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "8.1.1",
+          "MediatR": "7.0.0",
+          "ToDoList.Persistence": "1.0.0"
+        },
+        "runtime": {
+          "ToDoList.Application.dll": {}
+        },
+        "compile": {
+          "ToDoList.Application.dll": {}
+        }
+      },
+      "ToDoList.Infrastructure/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "8.1.1",
+          "Microsoft.EntityFrameworkCore": "2.1.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1",
+          "Microsoft.Extensions.Configuration.Json": "2.1.1",
+          "ToDoList.Application": "1.0.0",
+          "ToDoList.Persistence": "1.0.0"
+        },
+        "runtime": {
+          "ToDoList.Infrastructure.dll": {}
+        },
+        "compile": {
+          "ToDoList.Infrastructure.dll": {}
+        }
+      },
+      "ToDoList.Persistence/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.1.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1",
+          "Microsoft.Extensions.Configuration.Json": "2.1.1"
+        },
+        "runtime": {
+          "ToDoList.Persistence.dll": {}
+        },
+        "compile": {
+          "ToDoList.Persistence.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3182,6 +3244,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "AutoMapper/8.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GKBliBukkLG0z/U0T4Jy+yEpr5bKDImQ9nEy/T8jqNulwNkWDjiEWa9TL4yCxIhleDbmVmw2xYSaJ3Eb2OcSUg==",
+      "path": "automapper/8.1.1",
+      "hashPath": "automapper.8.1.1.nupkg.sha512"
+    },
     "MediatR/7.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3251,6 +3320,21 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "ToDoList.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ToDoList.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ToDoList.Persistence/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",

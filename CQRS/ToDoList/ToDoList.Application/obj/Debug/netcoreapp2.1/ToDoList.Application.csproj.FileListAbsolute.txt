@@ -1,0 +1,12 @@
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Application\bin\Debug\netcoreapp2.1\ToDoList.Persistence.dll
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Application\obj\Debug\netcoreapp2.1\ToDoList.Application.csprojAssemblyReference.cache
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Application\obj\Debug\netcoreapp2.1\ToDoList.Application.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Application\obj\Debug\netcoreapp2.1\ToDoList.Application.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Application\obj\Debug\netcoreapp2.1\ToDoList.Application.AssemblyInfo.cs
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Application\bin\Debug\netcoreapp2.1\ToDoList.Application.deps.json
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Application\bin\Debug\netcoreapp2.1\ToDoList.Application.dll
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Application\bin\Debug\netcoreapp2.1\ToDoList.Application.pdb
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Application\bin\Debug\netcoreapp2.1\ToDoList.Persistence.pdb
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Application\obj\Debug\netcoreapp2.1\ToDoList.Application.csproj.CopyComplete
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Application\obj\Debug\netcoreapp2.1\ToDoList.Application.dll
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Application\obj\Debug\netcoreapp2.1\ToDoList.Application.pdb

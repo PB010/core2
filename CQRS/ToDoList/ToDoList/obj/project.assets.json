@@ -4373,6 +4373,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
+          "AutoMapper": "8.1.1",
+          "MediatR": "7.0.0",
           "ToDoList.Persistence": "1.0.0"
         },
         "compile": {

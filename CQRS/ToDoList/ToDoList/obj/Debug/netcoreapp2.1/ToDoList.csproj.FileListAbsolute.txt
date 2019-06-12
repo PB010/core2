@@ -17,3 +17,13 @@ C:\Users\bIur\Desktop\Asp.Net\ToDoCqrs\CQRS\ToDoList\ToDoList\obj\Debug\netcorea
 C:\Users\bIur\Desktop\Asp.Net\ToDoCqrs\CQRS\ToDoList\ToDoList\obj\Debug\netcoreapp2.1\ToDoList.AssemblyInfoInputs.cache
 C:\Users\bIur\Desktop\Asp.Net\ToDoCqrs\CQRS\ToDoList\ToDoList\obj\Debug\netcoreapp2.1\ToDoList.AssemblyInfo.cs
 C:\Users\bIur\Desktop\Asp.Net\ToDoCqrs\CQRS\ToDoList\ToDoList\obj\Debug\netcoreapp2.1\ToDoList.RazorTargetAssemblyInfo.cache
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList\bin\Debug\netcoreapp2.1\ToDoList.pdb
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList\bin\Debug\netcoreapp2.1\ToDoList.Application.dll
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList\bin\Debug\netcoreapp2.1\ToDoList.Infrastructure.dll
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList\bin\Debug\netcoreapp2.1\ToDoList.Persistence.dll
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList\bin\Debug\netcoreapp2.1\ToDoList.Application.pdb
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList\bin\Debug\netcoreapp2.1\ToDoList.Infrastructure.pdb
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList\bin\Debug\netcoreapp2.1\ToDoList.Persistence.pdb
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList\obj\Debug\netcoreapp2.1\ToDoList.csproj.CopyComplete
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList\obj\Debug\netcoreapp2.1\ToDoList.dll
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList\obj\Debug\netcoreapp2.1\ToDoList.pdb

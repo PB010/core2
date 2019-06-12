@@ -9,6 +9,7 @@ using System;
 using System.Reflection;
 using ToDoList.Application.Interfaces;
 using ToDoList.Application.ToDos.Models;
+using ToDoList.Application.ToDos.Queries;
 using ToDoList.Infrastructure.Services;
 using ToDoList.Persistence;
 using ToDoList.Persistence.Helper;
@@ -29,11 +30,11 @@ namespace ToDoList
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ToDoDbContext>(options =>
-                options.UseSqlServer(_configuration["connectionString:toDoConnectionString"],
+                options.UseSqlServer(_configuration["ConnectionString:mediatrConnection"],
                     b => b.MigrationsAssembly(typeof(ToDoDbContext)
                         .GetTypeInfo().Assembly.GetName().Name)));
 
-            services.AddMediatR(typeof(Startup));
+            services.AddMediatR(typeof(GetAllToDosRequestHandler).Assembly);
             services.AddScoped<IToDoService, ToDoService>();
             services.AddMvc();
         }
@@ -51,7 +52,14 @@ namespace ToDoList
             Mapper.Initialize(cfg =>
 #pragma warning restore 618
             {
-                cfg.CreateMap<ToDo, ToDoDto>();
+                cfg.CreateMap<ToDo, ToDoDto>().ForMember(dest => dest.ToDoPriority, opt =>
+                    opt.MapFrom(src => src.ToDoPriority.Name))
+                    .ForMember(dest => dest.Status, opt => opt.MapFrom(src => 
+                        src.Status.ToString()))
+                    .ForMember(dest => dest.ToDoTime, opt => opt.MapFrom(src => 
+                        src.ToDoTime.ToString("dd MMM yy HH:mm")))
+                    .ForMember(dest => dest.CreatedAt, opt => opt.MapFrom(src =>
+                        src.CreatedAt.ToString("dd MMM yy HH:mm")));
                 cfg.CreateMap<ToDoForCreationDto, ToDo>().ForMember(dest => dest.ToDoTime,
                         opt => opt.MapFrom(src => src.ConvertTime()))
                     .ForMember(dest => dest.CreatedAt, opt => opt.MapFrom(
@@ -59,7 +67,6 @@ namespace ToDoList
                     .ForMember(dest => dest.Status, opt => opt.MapFrom(
                         src => ToDoStatus.Open));
             });
-
 
             app.UseMvc();
 

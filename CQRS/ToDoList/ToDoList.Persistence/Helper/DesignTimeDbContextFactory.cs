@@ -16,7 +16,7 @@ namespace ToDoList.Persistence.Helper
 
             var builder = new DbContextOptionsBuilder<ToDoDbContext>();
 
-            var connectionString = configuration["ConnectionString"];
+            var connectionString = configuration["ConnectionString:mediatrConnection"];
 
             builder.UseSqlServer(connectionString);
 

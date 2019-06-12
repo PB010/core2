@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using ToDoList.Application.Interfaces;
 using ToDoList.Application.ToDos.Models;
@@ -19,9 +19,11 @@ namespace ToDoList.Infrastructure.Services
         }
 
 
-        public async Task<IEnumerable<ToDoDto>> GetAllToDos()
+        public async Task<IEnumerable<ToDo>> GetAllToDos()
         {
-            return _context.ToDos.ToList().Select(Mapper.Map<ToDo, ToDoDto>);
+            return await _context.ToDos
+                .Include(t => t.ToDoPriority)
+                .ToListAsync();
         }
 
         public async Task CreateNewTodo(ToDoForCreationDto dto)
