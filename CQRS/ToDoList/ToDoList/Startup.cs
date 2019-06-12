@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using FluentValidation.AspNetCore;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -8,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Reflection;
 using ToDoList.Application.Interfaces;
+using ToDoList.Application.ToDos.Commands;
 using ToDoList.Application.ToDos.Models;
 using ToDoList.Application.ToDos.Queries;
 using ToDoList.Infrastructure.Services;
@@ -36,7 +38,9 @@ namespace ToDoList
 
             services.AddMediatR(typeof(GetAllToDosRequestHandler).Assembly);
             services.AddScoped<IToDoService, ToDoService>();
-            services.AddMvc();
+            services.AddMvc().AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<AddNewToDoValidation>());
+            //.AddFluent
+            //.AddFluentValidation();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,7 +64,7 @@ namespace ToDoList
                         src.ToDoTime.ToString("dd MMM yy HH:mm")))
                     .ForMember(dest => dest.CreatedAt, opt => opt.MapFrom(src =>
                         src.CreatedAt.ToString("dd MMM yy HH:mm")));
-                cfg.CreateMap<ToDoForCreationDto, ToDo>().ForMember(dest => dest.ToDoTime,
+                cfg.CreateMap<AddNewToDoCommand, ToDo>().ForMember(dest => dest.ToDoTime,
                         opt => opt.MapFrom(src => src.ConvertTime()))
                     .ForMember(dest => dest.CreatedAt, opt => opt.MapFrom(
                         src => DateTime.Now))

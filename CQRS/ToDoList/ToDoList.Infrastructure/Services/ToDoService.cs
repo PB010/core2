@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using ToDoList.Application.Interfaces;
+using ToDoList.Application.ToDos.Commands;
 using ToDoList.Application.ToDos.Models;
 using ToDoList.Persistence;
 using ToDoList.Persistence.Models;
@@ -26,11 +27,14 @@ namespace ToDoList.Infrastructure.Services
                 .ToListAsync();
         }
 
-        public async Task CreateNewTodo(ToDoForCreationDto dto)
+        public async Task<ToDoDto> CreateNewTodo(AddNewToDoCommand command)
         {
-            _context.ToDos.Add(Mapper.Map<ToDo>(dto));
-            _context.SaveChanges();
+            var addedToDo = Mapper.Map<ToDo>(command);
 
+            _context.ToDos.Add(addedToDo);
+            await _context.SaveChangesAsync();
+
+            return  Mapper.Map<ToDoDto>(addedToDo);
         }
     }
 

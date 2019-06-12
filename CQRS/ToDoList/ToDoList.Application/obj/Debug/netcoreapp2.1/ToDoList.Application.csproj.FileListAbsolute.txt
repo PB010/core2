@@ -10,3 +10,5 @@ C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Application\bin\Debug\net
 C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Application\obj\Debug\netcoreapp2.1\ToDoList.Application.csproj.CopyComplete
 C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Application\obj\Debug\netcoreapp2.1\ToDoList.Application.dll
 C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Application\obj\Debug\netcoreapp2.1\ToDoList.Application.pdb
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Application\bin\Debug\netcoreapp2.1\ToDoList.Application.runtimeconfig.json
+C:\Users\User\Desktop\.NET Core\CQRS\ToDoList\ToDoList.Application\bin\Debug\netcoreapp2.1\ToDoList.Application.runtimeconfig.dev.json
